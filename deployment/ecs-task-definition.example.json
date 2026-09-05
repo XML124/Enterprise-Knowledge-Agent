@@ -1,0 +1,30 @@
+{
+  "family": "enterprise-knowledge-agent",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "512",
+  "memory": "1024",
+  "containerDefinitions": [
+    {
+      "name": "api",
+      "image": "ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/enterprise-knowledge-agent:latest",
+      "essential": true,
+      "portMappings": [{"containerPort": 8000, "protocol": "tcp"}],
+      "environment": [
+        {"name": "APP_MODE", "value": "openai"},
+        {"name": "POSTGRES_HOST", "value": "YOUR_RDS_ENDPOINT"},
+        {"name": "POSTGRES_PORT", "value": "5432"},
+        {"name": "POSTGRES_DB", "value": "knowledge_agent"},
+        {"name": "EMBEDDING_DIM", "value": "1536"}
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/enterprise-knowledge-agent",
+          "awslogs-region": "REGION",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ]
+}

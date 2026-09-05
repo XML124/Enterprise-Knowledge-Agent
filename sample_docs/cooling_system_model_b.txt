@@ -1,0 +1,9 @@
+Engineering Cooling System Manual
+Model: ECS-200
+
+Maximum operating temperature: 50 degrees Celsius.
+Minimum operating temperature: 2 degrees Celsius.
+Recommended nominal coolant pressure is 3.0 bar.
+The system uses two variable-speed cooling pumps operating in duty/standby configuration.
+If the duty pump becomes unavailable, the standby pump should begin operation within three seconds.
+Scheduled maintenance should be performed every 750 operating hours.

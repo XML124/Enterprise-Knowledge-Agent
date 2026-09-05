@@ -1,0 +1,14 @@
+Engineering Cooling System Manual
+Model: ECS-100
+
+Maximum operating temperature: 45 degrees Celsius.
+Minimum operating temperature: 5 degrees Celsius.
+The system should not operate continuously above 42 degrees Celsius for more than 30 minutes.
+Recommended nominal coolant pressure is 2.5 bar.
+If coolant pressure falls below 1.8 bar, the controller should trigger a low-pressure warning.
+The system includes two cooling pumps.
+Pump A is the primary pump.
+Pump B is configured as a redundant backup.
+If Pump A fails, Pump B should automatically activate within five seconds.
+Maintenance inspections should be performed every 500 operating hours.
+The coolant filter should be inspected for blockage during each scheduled service.

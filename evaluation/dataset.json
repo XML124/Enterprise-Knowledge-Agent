@@ -1,0 +1,17 @@
+[
+  {
+    "question": "What is the maximum operating temperature of ECS-100?",
+    "expected_source": "cooling_system_manual.txt",
+    "expected_keywords": ["45", "degrees"]
+  },
+  {
+    "question": "What happens if Pump A fails?",
+    "expected_source": "cooling_system_manual.txt",
+    "expected_keywords": ["pump b", "five seconds"]
+  },
+  {
+    "question": "What is the nominal coolant pressure for ECS-200?",
+    "expected_source": "cooling_system_model_b.txt",
+    "expected_keywords": ["3.0", "bar"]
+  }
+]
