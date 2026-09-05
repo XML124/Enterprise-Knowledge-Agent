@@ -17,8 +17,6 @@ It demonstrates:
 - GitHub Actions CI
 - AWS deployment path: ECR + ECS/Fargate + RDS + S3 + CloudWatch + Secrets Manager
 
-The project is designed so you can **learn it locally first**, then deploy it to AWS later.
-
 ## Business scenario
 
 An engineering company has product manuals, troubleshooting guides, technical specifications and operating procedures. Engineers need to ask questions such as:
@@ -76,7 +74,7 @@ flowchart LR
 - no secrets committed to the repository
 - cloud deployment architecture
 
-## Educational simplifications
+## Simplifications
 
 This is a portfolio project, not a customer production system. The current version intentionally omits:
 
@@ -283,7 +281,7 @@ A real enterprise application would additionally need authentication, authorisat
 
 ## AWS target
 
-After you understand the local version, deploy:
+deploy:
 
 ```text
 GitHub
@@ -295,10 +293,6 @@ GitHub
   -> CloudWatch
   -> Secrets Manager
 ```
-
-Only after you actually complete this step should your CV say **deployed on AWS**.
-
-## CV-ready description — after you genuinely implement it
 
 **Enterprise Knowledge Agent — Personal Applied AI Engineering Project**
 
