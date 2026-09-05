@@ -1,6 +1,6 @@
 # Enterprise Knowledge Agent
 
-A GitHub-ready portfolio project for **Applied AI Engineer / AI Engineer / Forward-Deployed-style** roles.
+An end-to-end agentic RAG application for querying and analysing technical documents, built with LangGraph, FastAPI, PostgreSQL/pgvector, Docker and AWS.
 
 It demonstrates:
 
